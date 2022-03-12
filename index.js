@@ -1,8 +1,7 @@
 function submit() {
     let city = document.querySelector('#find').value;
-    //  let url = `https://www.omdbapi.com/?t=${movie}&apikey=94b38c8a`
-      let url=`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=69d21986854f740012c0fffcc1c6ea46`
-    async function Omd() {
+      let url=`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=69d21986854f740012c0fffcc1c6ea46`
+    async function sagar() {
         try {
             let res = await fetch(url)
 
@@ -18,7 +17,7 @@ function submit() {
         }
     }
 
-     Omd()
+     sagar()
   
  }
  var arr1=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
